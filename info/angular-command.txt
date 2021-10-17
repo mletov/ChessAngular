@@ -1,0 +1,20 @@
+//Создать проект
+ng new angular-tour-of-heroes
+
+//Запуск проекта
+ng serve
+
+//Запуск проекта с открытием в браузере
+ng serve --open
+
+//Запуск под отладкой
+ng b watch
+
+//Создать компонент
+ng generate component categories-list
+ng generate component users-list
+ng generate component vouchers-list
+ng generate component chess-list
+
+//Создать сервис
+ng generate service hero

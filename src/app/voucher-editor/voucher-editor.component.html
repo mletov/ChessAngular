@@ -1,0 +1,32 @@
+<form [formGroup]="voucherForm" (ngSubmit)="onSubmit()">
+
+    <label for="customer-name">Имя: </label>
+    <input id="customer-name" type="text" formControlName="customerName">
+  
+    <label for="customer-phone">Телефон: </label>
+    <input id="customer-phone" type="text" formControlName="customerPhone">
+
+    <div formArrayName="reservations">
+        <h2>Aliases</h2>
+        <button (click)="addReservation()">+ Add another alias</button>
+        <div *ngFor="let reservation of reservations.controls; let i=index">
+
+          <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput id="input-reservation-{{ i }}" [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker id="reservation-{{ i }}" #picker></mat-datepicker>
+          </mat-form-field>
+
+        </div>
+      </div>
+  
+    <button type="submit" [disabled]="!voucherForm.valid">Submit</button>
+  </form>
+
+
+            <!-- The repeated alias template -->
+          <!--
+          <label for="reservation-{{ i }}">Alias:</label>
+          <input id="reservation-{{ i }}" type="text" [formControlName]="i">
+          -->

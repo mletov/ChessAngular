@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VoucherEditorComponent } from './voucher-editor/voucher-editor.component';
 
 @Component({
   selector: 'app-root',
