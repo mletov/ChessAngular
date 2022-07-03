@@ -1,0 +1,12 @@
+X) Кастомные компоненты
+- Календарь
+- Попап
+- Грид
+- Мультичекбокс
+
+X) SignalR для грида
+npm install @aspnet/signalr –-save
+
+X) JWT авторизация
+https://blog.angular-university.io/angular-jwt-authentication/
+https://jasonwatmore.com/post/2019/08/06/angular-8-role-based-authorization-tutorial-with-example#:~:text=The%20auth%20guard%20is%20an,with%20the%20canActivate()%20method.
