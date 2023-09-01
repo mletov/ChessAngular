@@ -1,5 +1,5 @@
 
-import { NULL_EXPR } from '@angular/compiler/src/output/output_ast';
+//import { NULL_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Injectable } from '@angular/core';
 import * as signalR from "@aspnet/signalr";
 
@@ -8,7 +8,7 @@ import * as signalR from "@aspnet/signalr";
 })
 export class SignalRService {
 
-  constructor() { 
+  constructor() {
     /*
     this.hubConnection = new signalR.HubConnectionBuilder()
     .withUrl('https://localhost:51523/chart')
@@ -16,7 +16,7 @@ export class SignalRService {
   }
 
   private hubConnection: signalR.HubConnection;
-  public startConnection = () => {  
+  public startConnection = () => {
     this.hubConnection = new signalR.HubConnectionBuilder()
                             .withUrl('http://localhost:51523/chat')
                             .build();
@@ -32,5 +32,5 @@ export class SignalRService {
       alert(data);
     });
   }
-  
+
 }

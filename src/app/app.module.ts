@@ -11,7 +11,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { JwtInterceptor} from '@helpers/jwt.interceptor';
 import { ErrorInterceptor} from '@helpers/error.interceptor';
-//, ErrorInterceptor 
+//, ErrorInterceptor
 
 import { VoucherEditorComponent } from 'src/app/components/voucher-editor/voucher-editor.component';
 import { VoucherRegisterComponent } from 'src/app/components/voucher-register/voucher-register.component';
@@ -54,7 +54,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     HttpClientModule,
     CommonModule,
-    appRoutingModule
+    //appRoutingModule
     /*
     RouterModule.forRoot(
       appRoutes,
